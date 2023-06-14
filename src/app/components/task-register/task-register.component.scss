@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+.taskRegister{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #faf0e6;
+  font-family: 'Quicksand', sans-serif;
+}
+.astronaut{
+  width: 559px;
+  height: 684px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.formContainer{
+  background:#000000 ;
+  width: 600px;
+  height: 684px;
+  padding-left: 30px ;
+  padding-right: 30px;
+}
+.headerContainer{
+  display: flex;
+  justify-content: center;
+}
+.taskRegister h1 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.taskRegister label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.textContainer{
+  display: flex;
+  flex-direction: column;
+}
+.titleInput{
+  width: 590px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.descriptionInput{
+  width: 590px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 25px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.selectContainers{
+  display: flex;
+  gap: 50px;
+}
+.responsableSelect{
+  width: 266px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 25px 27px 20px 31px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.prioritySelect{
+  width: 266px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 25px 27px 20px 28px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  font-size: 18px;
+}
+.dateInput{
+  width: 285px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0px 27px 0px 31px;
+  font-size: 18px;
+}
+.dateContainer{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+button{
+  width: 590px;
+  height: 65px;
+  background-color: #1361A7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+

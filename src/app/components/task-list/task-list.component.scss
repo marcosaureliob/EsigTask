@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+.taskList{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #faf0e6;
+  font-family: 'Quicksand', sans-serif;
+}
+.formContainer{
+  background:#000000 ;
+  width: 1440px;
+  height: 1024px;
+  padding-left: 30px ;
+  padding-right: 30px;
+}
+.headerContainer{
+  display: flex;
+  justify-content: center;
+}
+.taskList h1 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.taskList label {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.textContainer{
+  display: flex;
+  flex-direction: column;
+}
+.titleInput{
+  width: 590px;
+  height: 77px;
+  border-radius: 8px;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 44px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.tdInput{
+  width: 885px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 60px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.selectContainers{
+  display: flex;
+  gap: 50px;
+}
+.responsableSelect{
+  width: 266px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 25px 27px 20px 31px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.prioritySelect{
+  width: 266px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 25px 27px 20px 28px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  font-size: 18px;
+}
+.dateInput{
+  width: 285px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0px 27px 0px 31px;
+  font-size: 18px;
+}
+.dateContainer{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+button{
+  width: 285px;
+  height: 65px;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 80px;
+  width: 1000px;
+}
+
+tr{
+  border-radius: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  color: white;
+  border-radius: 8px;
+}
+
+
+
