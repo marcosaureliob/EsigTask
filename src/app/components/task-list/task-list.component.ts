@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Task } from '../tasks/task';
+import { ApiService } from '../tasks/tasks.service';
 
-interface Product {
-  id: number;
-  title: string;
-  responsible: string;
-  actions: string;
-}
+
 
 @Component({
   selector: 'app-task-list',
@@ -14,14 +10,12 @@ interface Product {
   styleUrls: ['./task-list.component.scss']
 })
 export class TaskListComponent implements OnInit {
-  products: Product[] = [];
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit() {
-    this.http.get<Product[]>('api/products').subscribe((products) => {
-      this.products = products;
-    });
+  tasks: Task[] = [];
+  constructor(private service: ApiService ){}
+  ngOnInit(): void {
+    this.service.listar().subscribe((tasks) => {
+      this.tasks = tasks;
+    })
   }
 }
 

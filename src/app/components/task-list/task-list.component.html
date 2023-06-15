@@ -39,11 +39,11 @@
           <th>Responsável</th>
           <th>Ações</th>
         </tr>
-        <tr *ngFor="let product of products">
-          <td>{{ product.id }}</td>
-          <td>{{ product.title }}</td>
-          <td>{{ product.responsible }}</td>
-          <td>{{ product.actions }}</td>
+        <tr *ngFor="let task of tasks">
+          <td> {{ task.id }} </td>
+          <td> {{ task.title }} </td>
+          <td> {{ task.responsible }} </td>
+          <td> {{ task.actions }} /td>
         </tr>
       </table>
     </form>
