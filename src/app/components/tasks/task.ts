@@ -1,6 +1,6 @@
 export interface Task{
     id?:number;
     title:string;
-    responsible:string;
-    actions:string;
+    responsible:string | null;
+    description?:string;
 }

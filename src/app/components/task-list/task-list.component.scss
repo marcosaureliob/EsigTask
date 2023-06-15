@@ -93,8 +93,15 @@
   flex-direction: column;
   margin-bottom: 40px;
 }
+.actions{
+ font-size: 18px;
+ background: #000000;
+ color: #FFFFFF;
+ border: none;
+ font-family: 'Quicksand', sans-serif;
+}
 
-button{
+.search{
   width: 285px;
   height: 65px;
   background-color: #000000;

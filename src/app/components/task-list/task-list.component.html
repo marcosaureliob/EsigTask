@@ -29,7 +29,7 @@
           </select>
         </div>
         <div>
-          <button>Buscar Tarefas</button>
+          <button class="search">Buscar Tarefas</button>
         </div>
       </div>
       <table>
@@ -40,10 +40,14 @@
           <th>Ações</th>
         </tr>
         <tr *ngFor="let task of tasks">
-          <td> {{ task.id }} </td>
-          <td> {{ task.title }} </td>
-          <td> {{ task.responsible }} </td>
-          <td> {{ task.actions }} /td>
+          <td>{{ task.id }}</td>
+          <td>{{ task.title }}</td>
+          <td>{{ task.responsible }}</td>
+          <td>
+            <button class="actions" routerLink="/edit/{{task.id}}">Editar | </button>
+            <button class="actions" routerLink="/delete/{{task.id}}">Excluir | </button>
+            <button class="actions">Concluir</button>
+          </td>
         </tr>
       </table>
     </form>
