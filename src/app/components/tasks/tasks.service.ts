@@ -31,5 +31,11 @@ export class ApiService {
     const url = `${this.API}/${id}`
     return this.http.get<Task>(url)
   }
+  // Inside ApiService
+
+concluirTask(id: number): Observable<Task> {
+  const url = `${this.API}/${id}`;
+  return this.http.patch<Task>(url, { status: 'Concluído' });
+}
 }
 

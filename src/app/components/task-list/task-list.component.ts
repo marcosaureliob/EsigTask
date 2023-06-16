@@ -17,5 +17,15 @@ export class TaskListComponent implements OnInit {
       this.tasks = tasks;
     })
   }
+
+  concluir(task: Task): void {
+    if (task.id !== undefined) {
+        task.status = 'Concluído';
+        this.service.concluirTask(task.id).subscribe(() => {
+        });
+    } else {
+        console.error('Task ID is undefined');
+    }
+}
 }
 

@@ -10,8 +10,8 @@
     {
       "id": 2,
       "title": "Tarefa 2",
-      "description": "Estruturação de Back-End",
-      "responsible": "José",
+      "description": "Finalizar back end",
+      "responsible": "Marcos",
       "status": "Em andamento"
     },
     {

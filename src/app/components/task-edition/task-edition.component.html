@@ -3,7 +3,7 @@
     <div class="headerContainer">
       <h1>Editar tarefa</h1>
     </div>
-    <form>
+    <form (ngSubmit)="editarTask()">
       <div class="textContainer">
         <label for="titulo">Título:</label>
         <input
@@ -13,24 +13,33 @@
           placeholder="Digite o título"
           class="titleInput"
           [(ngModel)]="tasks.title"
+          required
         />
       </div>
       <div class="textContainer">
         <label for="descrição">Descrição:</label>
-        <input type="text" class="descriptionInput" [(ngModel)]="tasks.description" />
+        <input
+          type="text"
+          class="descriptionInput"
+          name="description"
+          [(ngModel)]="tasks.description"
+          required
+        />
       </div>
       <div class="selectContainers">
         <div class="textContainer">
           <label>Responsável:</label>
-          <select class="responsableSelect" [(ngModel)]="tasks.responsible">
-            <option value="" selected disabled>Selecione um filtro</option>
-            <option>{{tasks.responsible}}</option>
+          <select class="responsableSelect" [(ngModel)]="tasks.responsible" name="responsible" required>
+            <option value="" disabled>Selecione um filtro</option>
+            <option value="Marcos">Marcos</option>
+            <option value="João">João</option>
+            <option value="José">José</option>
           </select>
         </div>
         <div class="textContainer">
           <label>Prioridade:</label>
-          <select class="prioritySelect">
-            <option value="" selected disabled>Selecione um filtro</option>
+          <select class="prioritySelect" name="priority" required>
+            <option value="" disabled>Selecione um filtro</option>
             <option value="alta">Alta</option>
             <option value="media">Média</option>
             <option value="baixa">Baixa</option>
@@ -39,9 +48,9 @@
       </div>
       <div class="dateContainer">
         <label>Deadline:</label>
-        <input type="date" class="dateInput" />
+        <input type="date" class="dateInput" name="deadline" required />
       </div>
-      <button type="submit" (click)="editarTask()">Editar</button>
+      <button type="submit">Editar</button>
     </form>
   </div>
 </section>
