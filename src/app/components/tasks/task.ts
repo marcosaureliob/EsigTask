@@ -2,6 +2,6 @@ export interface Task{
     id?:number;
     title:string;
     responsible:string | null;
-    description?:string;
+    description:string;
     status?: string;
 }

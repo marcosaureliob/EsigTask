@@ -10,7 +10,7 @@
     <div class="headerContainer">
       <h1>Cadastrar tarefa</h1>
     </div>
-    <form>
+    <form (ngSubmit)="criarTask()">
       <div class="textContainer">
         <label for="titulo">Título:</label>
         <input
@@ -19,7 +19,8 @@
           name="title"
           placeholder="Digite o título"
           class="titleInput"
-          [(ngModel)]="tasks.title"
+          [(ngModel)]="newTask.title"
+          name="title"
         />
       </div>
       <div class="textContainer">
@@ -27,13 +28,14 @@
         <input
           type="text"
           class="descriptionInput"
-          [(ngModel)]="tasks.description"
+          [(ngModel)]="newTask.description"
+          name="description"
         />
       </div>
       <div class="selectContainers">
         <div class="textContainer">
           <label>Responsável:</label>
-          <select class="responsableSelect" [(ngModel)]="tasks.responsible">
+          <select class="responsableSelect" [(ngModel)]="newTask.responsible" name="responsible">
             <option value="" selected disabled>Selecione um filtro</option>
             <option value="Marcos">Marcos</option>
             <option value="João">João</option>
@@ -42,7 +44,7 @@
         </div>
         <div class="textContainer">
           <label>Prioridade:</label>
-          <select class="prioritySelect">
+          <select class="prioritySelect" name="priority">
             <option value="" selected disabled>Selecione um filtro</option>
             <option value="alta">Alta</option>
             <option value="media">Média</option>
@@ -52,9 +54,9 @@
       </div>
       <div class="dateContainer">
         <label>Deadline:</label>
-        <input type="date" class="dateInput" />
+        <input type="date" class="dateInput" name="deadline" />
       </div>
-      <button type="submit" (click)="criarTask()">Cadastrar</button>
+      <button type="submit">Cadastrar</button> 
     </form>
   </div>
 </section>

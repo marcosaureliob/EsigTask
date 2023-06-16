@@ -38,6 +38,7 @@
         <tr>
           <th>Número</th>
           <th>Título</th>
+          <th>Descrição</th>
           <th>Responsável</th>
           <th>Status</th>
           <th>Ações</th>
@@ -45,6 +46,7 @@
         <tr *ngFor="let task of tasks">
           <td>{{ task.id }}</td>
           <td>{{ task.title }}</td>
+          <td>{{task.description}}</td>
           <td>{{ task.responsible }}</td>
           <td>{{ task.status }}</td>
           <td>
