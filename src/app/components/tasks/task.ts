@@ -3,4 +3,5 @@ export interface Task{
     title:string;
     responsible:string | null;
     description?:string;
+    status?: string;
 }

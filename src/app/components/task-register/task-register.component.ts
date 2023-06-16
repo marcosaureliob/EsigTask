@@ -14,7 +14,8 @@ export class TaskRegisterComponent implements OnInit {
   tasks: Task = {
     title: '',
     description: '',
-    responsible: null
+    responsible: '',
+    status: 'Em andamento',
   }
 
   constructor(private service: ApiService,

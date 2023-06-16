@@ -17,7 +17,9 @@
           <label>Responsável:</label>
           <select class="responsableSelect">
             <option value="" selected disabled>Selecione um filtro</option>
-            <option value="responsible">Marcos</option>
+            <option value="marcos">Marcos</option>
+            <option value="joao">João</option>
+            <option value="jose">José</option>
           </select>
         </div>
         <div class="textContainer">
@@ -37,12 +39,14 @@
           <th>Número</th>
           <th>Título</th>
           <th>Responsável</th>
+          <th>Status</th>
           <th>Ações</th>
         </tr>
         <tr *ngFor="let task of tasks">
           <td>{{ task.id }}</td>
           <td>{{ task.title }}</td>
           <td>{{ task.responsible }}</td>
+          <td>{{ task.status }}</td>
           <td>
             <button class="actions" routerLink="/edit/{{task.id}}">Editar | </button>
             <button class="actions" routerLink="/delete/{{task.id}}">Excluir | </button>

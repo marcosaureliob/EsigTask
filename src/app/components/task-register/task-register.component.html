@@ -24,14 +24,20 @@
       </div>
       <div class="textContainer">
         <label for="descrição">Descrição:</label>
-        <input type="text" class="descriptionInput" [(ngModel)]="tasks.description" />
+        <input
+          type="text"
+          class="descriptionInput"
+          [(ngModel)]="tasks.description"
+        />
       </div>
       <div class="selectContainers">
         <div class="textContainer">
           <label>Responsável:</label>
           <select class="responsableSelect" [(ngModel)]="tasks.responsible">
             <option value="" selected disabled>Selecione um filtro</option>
-            <option>{{tasks.responsible}}</option>
+            <option value="Marcos">Marcos</option>
+            <option value="João">João</option>
+            <option value="José">José</option>
           </select>
         </div>
         <div class="textContainer">
