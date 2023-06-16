@@ -1,27 +1,41 @@
-# Task
+# Gerenciador de Tarefas em Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Este é um aplicativo de gerenciamento de tarefas construído com Angular, SCSS e JSON Server. O objetivo principal deste aplicativo é ajudar você a organizar e gerenciar suas tarefas de maneira eficiente.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+Crie uma tabela de tarefas com informações importantes, como título, descrição, prazo e status.
+Divida as tarefas por funcionários, atribuindo cada tarefa a um membro da equipe.
+Visualize facilmente todas as tarefas atribuídas a um funcionário específico.
+Atualize o status das tarefas à medida que são concluídas.
+Adicione novas tarefas, editando-as conforme necessário.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como usar
+Pré-requisitos
 
-## Build
+Antes de começar, certifique-se de ter o seguinte software instalado em sua máquina:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Node.js: https://nodejs.org
+Angular CLI: Execute npm install -g @angular/cli para instalar o Angular CLI globalmente.
+JSON Server: Execute npm install -g json-server para instalar o JSON Server globalmente.
 
-## Running unit tests
+## Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clone este repositório em sua máquina local:
+Navegue até o diretório do projeto:
+cd gerenciador-de-tarefas-angular
 
-## Running end-to-end tests
+Instale as dependências necessárias:
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Inicie o servidor JSON Server para simular um backend de API:
+json-server --watch db.json
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Em um terminal separado, inicie o servidor de desenvolvimento do Angular:
+ng serve
+
+
+## Abra seu navegador e acesse http://localhost:4200 para ver o aplicativo em ação!
+
